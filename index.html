@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GoogleHomepage</title>
+<style>
+	
+	*{
+		margin:0;
+		padding:0;
+		box-sizing: border-box;
+
+	}
+
+	.navbar{
+		display: flex;
+		height: 65px;
+		
+	}
+	.navbar ul{
+		display: flex;
+		list-style: none;
+		padding:13px 4px;
+		position: absolute;
+		right:40px;
+	}
+	.navbar ul li a{
+		text-decoration: none;
+		font-size:18px;
+		padding:0 16px;
+
+		color:grey;
+
+	}
+	#but{
+		color:white;
+		background-color:purple;
+		height:32px;
+		position: absolute;
+		right:-22px;
+		top:5px;
+		width:32px;
+		border-radius:15px;
+		border:0px solid white;
+		cursor: pointer;
+	}
+	.main
+	{
+		min-height: calc(100vh - 8vh - 65px);
+	}
+	.mainpart img{ 
+		display: block;
+		margin: auto;
+
+	}
+	.mainpart input{
+		display: block;
+		margin:auto;
+		margin-top:25px;
+		font-size:20px;
+		width:525px;
+		height:45px;
+		border-radius:25px;
+		border:0.1px solid grey;
+		padding:0 25px;
+
+
+	}
+	.but{
+		margin-top:15px;
+		display: flex;
+		margin-top:40px;
+		margin:30px 562px;
+		padding:15px;
+
+	}
+	button{
+		cursor: pointer;
+		height:38px;
+		width:100px;
+
+	}	
+	section .end p{
+	  text-align: center;
+	}
+	.foot{
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		background-color: rgba(0,0,0,0.1);
+		height:8vh;
+		text-align: center;
+		cursor: pointer;
+	}
+	@media (max-width:1000px )
+	{
+		
+
+		.navbar ul li a{
+			font-size:32px;
+		}
+		.navbar ul button{
+			font-size:22px;
+			margin-top: 7px;
+		}
+		.navbar{
+			display: block;
+			margin: auto;
+		}
+		.main .but{
+			flex-direction: column;
+			margin: 50px 365px;
+		}
+		.end p{
+			font-size:32px;
+		}
+		.foot{
+			font-size:32px;
+		}
+		.main .but button{
+			width:225px;
+			height:75px;
+			font-size:28px;
+
+		}
+		
+	}
+
+
+
+
+</style>	
+</head>
+<body>	
+<main class="navbar">
+<ul>
+<li><a href="#">Images</li></a>
+<li><a href="#">G-mail</li></a>
+<button id="but">P</button>
+</ul>	
+</main>	
+
+<section class="main">
+<div class="mainpart">
+<img src="googly.png">	
+<input type="text" name="text" id="in">
+</div>	
+<div class="but">
+<button>Google search</button>
+<button>Feeling Lucky</button>	
+</div>
+<div class="end">
+<p>Google Offered in:नेपाली </p>
+</div>
+</section>
+</body>
+
+<footer class="foot">
+<p>Privacy Terms Settings </p>	
+</footer>	
+</html>
